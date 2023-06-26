@@ -1,0 +1,53 @@
+from pymongo import MongoClient
+from bson.objectId import ObjectId
+
+class AnimalShelter(object):
+    """ CRUD operations for Animal collection in MongoDB """
+    
+    def __init__(self):
+        USER = 'aacuser'
+        PASS = 'SNHU111'
+        HOST = 'nv-desktop-services.apporto.com'
+        PORT = '22842'
+	DB = 'aac'
+        COL = 'animals'
+        
+        self.client = MongoClient('mongoldb://%s:%s@%s:%d' % (USER,PASS,HOST,PORT))
+        self.database = self.client['%s' % (DB)]
+        self.collection = self.database['%s' % (COL)]
+     
+# Create in CRUD        
+    def create(self, data):
+        if data is not None:
+            if data:
+                self.collection.insert_one(data)
+                return True
+            else:
+                return False
+            
+# Read in CRUD
+    def read(self, search_result):
+        if search_result is not None:
+            if search_result:
+                return self.collection.find_one()
+            else:
+		return False
+
+# Update in CRUD
+    def Update(self, filter, new_value):
+        if new_value in self.data:
+            if new_value:
+                self.collection.update_one(filter, {"$set": new_value})
+            return True
+        else:
+            return False
+        
+# Delete in CRUD
+    def Delete(self, filter):
+        if data is not None:
+            if filter:
+		self.collection.delete_one(filter)
+		return True
+	else:
+		return False
+        
