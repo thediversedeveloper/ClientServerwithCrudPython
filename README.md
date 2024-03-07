@@ -6,5 +6,3 @@
 #I had a lot of problems throughout this course, and I will be taking what I learned about databases and following suit to learn SQL, and other database mnanagement systems. I will also apply these concepts when developing apps.
 
 #Computer scientists is a broad term explaining a group of people who study the science of computers. This can range from Information Technologies, AI, and software engineering. All of thse are important in building technologies, and with the boom of AI just at our fingertips copmuter scientists are more in need then ever. 
-
-#Thank you for all your help this semester Professor, and I hope everything ends well with your family.
