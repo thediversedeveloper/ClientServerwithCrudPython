@@ -1,5 +1,3 @@
-# ClientServerClass
-
 #CRUD is a great example of how to write maintainable, readable, and adaptable code. It sets up the class in order Create-> Read -> Update -> Delete. A very simple class to write efficently blocked code to write an application. Another example is by making your code readable to all levels, by adding in line comments, and proper indentations. Both of these concpets will get you started to writing clean code.
 
 #As an apsiring computer scientist, I approach problems in sections. My brain can get overwhelmed very easily, and taking each step on one at a time helps ease the tension. I first go back within the code and look at any easily identifiable mistakes, and test the code as soon as I write a class so I am not going back over hundreds of lines. I also, go back in the resources, and view videos. It helps to know your learning style, and also when to stop and come back to an issue. 
